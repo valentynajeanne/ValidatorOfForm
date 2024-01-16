@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <!--header-->
+        <div class="border_header">
+          <header class="form_header">
+            <h2>Create account</h2>
+          </header>
+          
+        </div>
+        <div class="form_content">
+          <!--form-->
+          <form id="myform" action="#" name="form" method="post" 
+           novalidate enctype="multipart/form-data" target="_blank">
+            <!--First name and last name-->
+            <div class="form_content_item">
+              <div class="form_content_item_field">
+                <label for="">
+                  <h3>First Name</h3>
+                  <input
+                    type="text"
+                    name="firstName"
+                    data-required="true"
+                    placeholder="enter your name"
+                  />
+                </label>
+              </div>
+              <div class="form_content_item_field">
+                <label for="">
+                  <h3>Last Name</h3>
+                  <input
+                    type="text"
+                    name="lastName"
+                    data-required="true"
+                    placeholder="enter your  last name"
+                  />
+                </label>
+              </div>
+            </div>
+            <!--Email-->
+            <div class="form_content_item">
+              <div class="form_content_item_center">
+                <label>
+                  <h3 class="email">Email</h3>
+                  <input
+                    type="email"
+                    name="email"
+                    data-required="true"
+                    placeholder="enter your email"
+                    class="form_content_item_email"
+                  />
+                </label>
+              </div>
+              
+            </div>
+            <!--Password and confirm password-->
+            <div class="form_content_item">
+              <div class="form_content_item_field">
+                <label for="">
+                  <h3>Password</h3>
+                  <input
+                    type="password"
+                    name="password"
+                    data-required="true"
+                    data-max-length="12"
+                    data-min-length="4"
+                    placeholder="enter your password"
+                  />
+                </label>
+              </div>
+              <div class="form_content_item_field">
+                <label for="">
+                  <h3>Confirm Password</h3>
+                  <input
+                    type="password"
+                    name="confirmPassword"
+                    data-required="true"
+                    data-max-length="12"
+                    data-min-length="4"
+                    placeholder="enter your password again"
+                    />
+                </label>
+              </div>
+            </div>
+            <!--Gender and hobbies-->
+            <div class="form_content_item">
+              <!--Gender-->
+              <div class="form_content_item_field">
+                <label>
+                  <h3>Gender</h3>
+                  <label for="male" class="gender">Male</label>
+                  <input
+                    id="male"
+                    type="radio"
+                    name="gender"
+                    value="male"
+                  />
+                  <label for="female" class="gender">Female</label>
+                  <input
+                    id="female"
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                  />
+                </label>
+              </div>
+              <!--checkboxes-->
+              <div class="form_content_item_field checkboxes">
+                <label for="">
+                  <h3>Hobbies</h3>
+                  <label class="checkbox" for="check1">Music</label>
+                  <input
+                    id="check1"
+                    type="checkbox"
+                    name="hobbies"
+                    value="music"
+                  />
+                  <label class="checkbox" for="check2">Sports</label>
+                  <input
+                    id="check2"
+                    type="checkbox"
+                    name="hobbies"
+                    value="sports"
+                  />
+                  <label class="checkbox" for="check3">Travel</label>
+                  <input
+                    id="check3"
+                    type="checkbox"
+                    name="hobbies"
+                    value="travel"
+                  />
+                  <label class="checkbox" for="check1">Movies</label>
+                  <input
+                    id="check4"
+                    type="checkbox"
+                    name="hobbies"
+                    value="movies"
+                  />
+                </label>
+              </div>
+            </div>
+            <!--Source of income and  size of income-->
+            <div class="form_content_item">
+              <!--Source of income-->
+              <div class="form_content_item_field">
+                <label for="income">
+                  <h3>Source of income</h3>
+                  <select id="income" required name="income">
+                    <option selected value="income">Employed</option>
+                    <option value="income">Rent from a house</option>
+                    <option value="income">Dividend Income</option>
+                  </select>
+                </label>
+              </div>
+              <!--Size of income-->
+              <div class="form_content_item_field">
+                <label for="sizeincome" >
+                  <h3>Income</h3>
+                  <input class="incomebtn"
+                    id="sizeincome"
+                    type="range"
+                    name="income"
+                    value="1"
+                    min="0"
+                    max="100"
+                  />
+                  <span class="income">20K</span>
+                </label>
+              </div>
+            </div>
+            <!--picture and age-->
+            <div class="form_content_item">
+              <!--Picture foto-->
+              <div class="form_content_item_field">
+                <label for="picture">
+                  <h3>Upload Profile Picture</h3>
+                  <input
+                    id="picture"
+                    type="file"
+                    name="upload"
+                    accept="jpg, jpeg, png"
+                    value="No fille choosen"
+                    placeholder="choose file"
+                  />
+                </label>
+              </div>
+              <!--Age-->
+              <div class="form_content_item_field">
+                <label for="age">
+                  <h3>Age</h3>
+                  <input id="age" name="age" data-required="true"
+                  data-max-length="120"
+                  data-max-length="16"
+                  type="number" placeholder="18"/>
+                </label>
+              </div>
+            </div>
+            <!--Bio-->
+            <div class="form_content">
+              <label for="bio">
+                <h3 class="bio">Bio</h3>
+                <textarea id="bio" name="text" rows="4" cols="45"></textarea>
+              </label>
+            </div>
+            <div class="border_footer">
+                <footer class="footer_button">
+                  <input class="footer_button_btn" type="submit" value="Create" size="90px"/>
+                </footer>
+              
+              </div>
+          </form>
+        </div>
+      
+        </div>
+    </div>
+    <script defer type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
