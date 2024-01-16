@@ -1,0 +1,251 @@
+/*typographic*/
+/*general*/
+body {
+    --title-color: #00BB92;
+    font-family:'Inter'; 
+    background-color: #EFF0F1;
+ }
+
+ .form {
+    box-sizing: border-box;
+    border: 20px #547F91 solid;
+    background-color: #FAFAFA;
+ }
+/*header*/
+/*class "border_header was created 
+for borderradius inside block*/
+ .border_header {
+    background-color: #547F91;
+ }
+ .form_header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #666666;
+    height: 70px;
+    width: 100%;
+    background-color: #EFF0F1;
+    box-sizing: border-box;
+    border: 2px solid #FFF0F1;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 12px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0cm;   
+}
+/*styles for every block of
+ flex components of form*/
+h3 {
+    margin: 0;
+    padding: 0;
+    color: var(--title-color);
+    letter-spacing: 0cm;
+    font-size: 17px;
+}
+
+label,
+input {
+    padding: 7px 5px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    color: #958E86;
+    width: 100%;
+}
+
+
+input {
+    border: 1px solid #D8D8D8;
+    width: 95%;
+    margin: 5px 0px;
+    padding: 10px;
+}
+.error input {
+    border: 1px solid red;
+}
+.error-label {
+color: red;
+display: block;
+margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: #DBDCDC;
+    font-weight: normal;
+    border-radius: 10%;
+    font-size: 14px;
+}
+
+/*style for email input*/
+.form_content_item_email {
+    border: 1px solid #D8D8D8;
+    width: 100%; 
+    
+}
+/*this is the container for input-email*/
+.form_content_item_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    margin: 0px 10px;
+
+}
+/*style for radio-button*/
+.gender {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0cm;
+    color: #666666;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/*styles for drop-down*/
+#sizeincome {
+    border: 1px solid #D8D8D8;
+    background-color: #00AF88;
+    color: #A7EDD6;
+    padding: 0;
+}
+/*style for input-range*/
+.incomebtn {
+    width: 70%;
+    background: #666666;
+    cursor: pointer;
+    opacity: 0.8;
+}
+/*style for input checkbox*/
+.checkbox {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0cm;
+    color: #666666;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+
+#check1,
+#check2,
+#check3,
+#check4 {
+    width: 10px;
+}
+/*style for input-file*/
+#picture {
+    width: 95%;
+}
+ /*style for input-number*/
+ #age {
+    width: 95%;
+ }
+/*style for input textarea*/
+ #bio {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     width: 100%;
+     border: 1px solid #D8D8D8;
+ }
+
+/*button*/
+ .border_footer {
+    background-color: #547F91;
+ }
+.footer_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 85px;
+    background-color: #EFF0F1;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footer_button_btn {
+    background-color:#00AF88;
+    width: 90px;
+    height: 40px;
+    border: 1px solid #00BB92;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 60px;
+}
+
+ /*structure*/
+
+/*desktop*/
+.container {
+    margin: 0% 20% 0% 20%;
+}    
+    .form_content {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        
+    }
+    
+.form_content_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 99%;
+    }
+
+.form_content_item_field {
+    width: 95%;
+    margin: 0px 20px;
+}    
+ textarea {
+    width: 100%;
+ }   
+input {
+    width: 100%;
+}
+#male,
+#female {
+    width: 10px;
+}
+
+#income,
+#age {
+    width: 95%;
+}
+/*tablet*/
+@media (max-width: 768px) {
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .form_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    
+    }
+
+    .form_content_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 10px;
+        }
+}
